@@ -1,0 +1,22 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.19.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hawk:20160119':
+    - tinderjs > request > hawk:
+        patched: '2020-08-14T00:32:48.671Z'
+  'npm:http-signature:20150122':
+    - tinderjs > request > http-signature:
+        patched: '2020-08-14T00:32:48.671Z'
+  'npm:mime:20170907':
+    - tinderjs > request > mime:
+        patched: '2020-08-14T00:32:48.671Z'
+    - tinderjs > request > form-data > mime:
+        patched: '2020-08-14T00:32:48.671Z'
+  'npm:qs:20140806-1':
+    - tinderjs > request > qs:
+        patched: '2020-08-14T00:32:48.671Z'
+  'npm:request:20160119':
+    - tinderjs > request:
+        patched: '2020-08-14T00:32:48.671Z'
