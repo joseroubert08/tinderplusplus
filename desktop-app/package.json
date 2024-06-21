@@ -20,6 +20,12 @@
   "dependencies": {
     "moment": "^2.8.4",
     "tinderjs": "git://github.com/mfkp/tinderjs",
-    "nw-updater": "git://github.com/mfkp/nw-updater"
-  }
+    "nw-updater": "git://github.com/mfkp/nw-updater",
+    "@snyk/protect": "latest"
+  },
+  "scripts": {
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
